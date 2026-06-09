@@ -32,11 +32,6 @@ bell.addEventListener("click",()=>{
     const {status} = getStatus(); 
 
     panel.classList.toggle("active");
-
-    console.log("Mostando el estado de proyectos " , status);
-    if(!status){
-        btnCerrarNotificaciones();
-    }
 });
 
 function closeNotification(element){

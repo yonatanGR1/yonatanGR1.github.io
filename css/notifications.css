@@ -1,28 +1,26 @@
 .notification-bell{
-
-    position:fixed;
-
-    top:4rem;
-
-    right:clamp(15px, 3vw, 70px);
-
+    display: flex;
+    margin: auto;
     font-size:clamp(24px, 2vw, 40px);
-
     cursor:pointer;
+}
+
+.notification-bell img{
+    width: 20px;
 }
 
 .badge{
     position:absolute;
-    width:clamp(14px,1.5vw,22px);
-    height:clamp(14px,1.5vw,22px);
+    width:clamp(14px,1.5vw,10px);
+    height:clamp(14px,1.5vw,10px);
 
-    font-size:clamp(8px,1vw,12px);
+    font-size:clamp(4px,1vw,8px);
 
-    top:-5px;
+    top:0px;
 
-    right:-5px;
+    right:10px;
 
-    background-color:rgba(0, 229, 255, 0.329);
+    background-color:rgba(56, 56, 56, 0.329);
 
     color:rgb(255, 255, 255);
 
@@ -45,7 +43,7 @@
 
     width:clamp(280px,30vw,300px);
 
-    height:100vh;
+    height:96vh;
 
     background: rgba(255, 255, 255, 0.677);
 

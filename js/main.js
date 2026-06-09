@@ -1,6 +1,8 @@
 import "./app.js";
 import "./notifications.js";
 
+import "./menu.js"
+
 import "./fnNotifications/removeFns.js";
 import "./fnNotifications/fnExperiencia.js";
 import "./fnNotifications/fnConocimientos.js";

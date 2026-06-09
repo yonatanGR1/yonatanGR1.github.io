@@ -6,20 +6,31 @@
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/animations.css">
     <link rel="stylesheet" href="/css/notifications.css">
+    <link rel="stylesheet" href="/css/taskbar.css">
+    <script src="https://kit.fontawesome.com/db144c72b1.js" crossorigin="anonymous"></script>
 </head>
 <body>
+
     <!-- Fondo -->
     <div class="background"></div>
 
-    <!-- Campana -->
-    <div class="notification-bell" id="bell">
-        <img src="/assets/icons/bell.svg" alt="Notificaciones">
-        <span class="badge"></span>
-    </div>
-
     <!-- Pnale -->
     <aside id="notificationPanel">
-        <h2>Notificaciones</h2>   
+        <h2>Notificaciones</h2>
+    </aside>
+
+    <!-- PnaleMenuWindows -->
+    <aside id="panelMenu">
+        <h2>Anclado</h2>
+        <a href="/assets/documentacion/CV/CV.pdf" target="_blank" class="panelEtiquetaCV">
+            <img src="/assets/icons/cv.svg" alt="">
+            <span>CV</span>
+        </a>
+    </aside>
+
+    <!-- PnaleMenuLanguage --> 
+    <aside id="panelMenu">
+        <h2>Language</h2>
     </aside>
 
     <!-- CONTENEDOR PRINCIPAL-->
@@ -107,6 +118,33 @@
 
     <!--Sounds-->
     <audio id="notifSound" src="/assets/sounds/soundAudio.mp3" preload="auto"></audio>
+
+    <section id="footer">
+		<footer class="footer">
+			<section class="iconW" id="menuW">
+				<img width="30px;" src="/assets/icons/windows.svg" alt="">
+			</section>
+			<section class="notification">
+				<div id="notification">
+                    <div class="language">
+                        <img src="/assets/icons/language.svg">
+                        <span>Es</span>
+                    </div>
+                    <div class="wi-fi">
+                        <img width="20px" src="/assets/icons/wifi.svg" alt="">
+                    </div>
+                    <div class="sound">
+                        <img width="20px" src="/assets/icons/sound.svg" alt="">
+                    </div>
+                    <!-- Campana -->
+                    <div class="notification-bell" id="bell">
+                        <img src="/assets/icons/bell.svg" alt="Notificaciones">
+                        <span class="badge">°</span>
+                    </div>
+                </div>
+			</section>
+		</footer>
+	</section>
 
     <script type="module" src="js/main.js"></script>
 </body>
