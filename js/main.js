@@ -2,6 +2,7 @@ import "./app.js";
 import "./notifications.js";
 
 import "./menu.js"
+import "./language.js";
 
 import "./fnNotifications/removeFns.js";
 import "./fnNotifications/fnExperiencia.js";

@@ -39,7 +39,7 @@
     width: clamp(1rem , 15vw, 20rem );
     height: 0;
     font-size: 0;
-    bottom: 2rem;
+    bottom: 2.5rem;
     color: white;
     background-color: rgba(36, 36, 36, 0.436);
     transition:.4s;
@@ -55,8 +55,14 @@
     display: none;
 }
 
-.panelEtiquetaCV img{
+.panelEtiquetaCV img ,
+.panelEtiquetaProyecto img{
     width: clamp(1rem , 5vw , 5rem);
+}
+
+.panelEtiquetaCV span , 
+.panelEtiquetaProyecto span{
+    position: absolute;
 }
 
 #panelMenu.active{
@@ -67,6 +73,67 @@
 #panelMenu.active a {
     display: flex;
 }
+
+#panelMenuLanguage{
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    width: clamp(1rem , 15vw, 12rem );
+    bottom: 2.5rem;
+    height: 0;
+    right: 0;
+    font-size: 0;
+    color: white;
+    background-color: rgba(36, 36, 36, 0.436);
+    transition:.4s;   
+}
+
+#panelMenuLanguage h2{
+    display: flex;
+    justify-content: start;
+    margin: 1rem 1rem;
+}
+
+#Es , #Eng{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1px;
+    padding: 1rem 1rem;
+
+    opacity: 0;
+    transition: all .4s ease;
+}
+
+#Es h3 , span, 
+#Eng h3 , span{
+    align-self: center;
+    justify-self: center;
+    margin-right: auto;
+}
+
+#Es img,
+#Eng img{
+    width: clamp(1rem , 1vh , 2rem);
+}
+
+#Es:hover , 
+#Eng:hover{
+    background-color: rgba(0, 255, 255, 0.511);
+}
+
+#panelMenuLanguage.active{
+    height:clamp(1rem, 15vw, 20rem) ;
+    font-size: clamp(0.5rem , 1vh, 1rem);
+}
+
+#panelMenuLanguage.active #Es,
+#panelMenuLanguage.active #Eng{
+    opacity: 1;
+}
+
+
+
 
 #notification{
     display: grid;
