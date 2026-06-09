@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Yonatan Javier Guzmán Ramos</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/animations.css">
+    <link rel="stylesheet" href="/css/notifications.css">
+</head>
+<body>
+    <!-- Fondo -->
+    <div class="background"></div>
+
+    <!-- Campana -->
+    <div class="notification-bell" id="bell">
+        <img src="/assets/icons/bell.svg" alt="Notificaciones">
+        <span class="badge"></span>
+    </div>
+
+    <!-- Pnale -->
+    <aside id="notificationPanel">
+        <h2>Notificaciones</h2>   
+    </aside>
+
+    <!-- CONTENEDOR PRINCIPAL-->
+     <div class="first-container">
+        <!-- Tarjeta -->
+        <section class="profile-card">
+            <div class="ProfileBackground"></div>
+
+            <div id="Perfil">
+                <h1>
+                    Yonatan Javier Guzmán Ramos
+                </h1>
+                <div id="infoPerfil">
+                    <p>
+                        Busco una emocionante oportunidad donde pueda aplicar mis conocimientos y experiencia para contribuir al exito de la organizacion.
+                        Me considero una persona comprometida con el aprendizaje continuo, la adquisición de nuevas habilidades y la adaptación a las tecnologías 
+                        emergentes. Mi objetivo es seguir creciendo tanto a nivel laboral como personal, aportando valor al equipo de trabajo y colaborando en 
+                        proyectos que permitan optimizar operaciones, fortalecer la gestión del conocimiento y mejorar la experiencia de los usuarios. 
+                    </p>
+                </div>
+                <div id="Contact">
+                    <p>
+                        Guatemala City, Guatemala 
+                        <img src="./assets/icons/ubicacion.svg">
+                    </p>
+
+                    <p>
+                        23 años
+                        <img src="./assets/icons/edad.svg">
+                    </p>    
+                    
+                    <p>
+                        yonatangr17@gmail.com
+                        <img src="/assets/icons/correo.svg">
+                    </p>
+                    <p>
+                        +502 3032-7254
+                        <img src="/assets/icons/telefono.svg">
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Navegacion -->
+        <section class="quick-menu">
+            <!-- Proyectos -->
+            <a class="quick-menu-span iconProyectos" id="iconProyectos" href="">
+                <img class="icon-img" src="/assets/icons/projects.svg" alt="Icono de Proyectos">
+                <span class="icon-text-hidden">Proyectos</span>
+                <span>Proyectos 🔝</span>
+            </a>
+
+            <!-- Documentacion -->
+            <a class="quick-menu-span iconDocumentacion" id="iconDocumentacion" href="">
+                <img class="icon-img" src="/assets/icons/docs.svg" alt="Icono de documentacion">
+                <span class="icon-text-hidden">Documentacion</span>
+                <span>Documentacion 🔝</span>
+            </a>
+
+            <!-- Habilidades -->
+            <a class="quick-menu-span iconHabilidades" id="iconHabilidades" href="">
+                <img class="icon-img" src="/assets/icons/skills.svg" alt="Icono de habilidades">
+                <span class="icon-text-hidden">Conocimientos</span>
+                <span>Conocimientos 🔝</span>
+            </a>
+
+            <!-- Experiencia -->
+            <a class="quick-menu-span iconExperiencia" id="iconExperiencia" href="">
+                <img class="icon-img" src="/assets/icons/experience.svg" alt="Icono de experiencia">
+                <span class="icon-text-hidden">Experiencia</span>
+                <span>Experiencia 🔝</span>
+            </a>
+
+            <!-- Contacto -->
+            <a class="quick-menu-span iconContactos" id="iconContactos" href="">
+                <img class="icon-img" src="/assets/icons/contact.svg" alt="Icono de contactos">
+                <span class="icon-text-hidden">Contacto</span>
+                <span>Contacto 🔝</span>
+            </a>
+        </section>
+     </div>
+
+    <!-- mascot -->
+    <img src="/assets/characters/mascot.png" class="mascot" alt="mascota">
+
+    <!--Sounds-->
+    <audio id="notifSound" src="/assets/sounds/soundAudio.mp3" preload="auto"></audio>
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

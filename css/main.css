@@ -1,0 +1,233 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    font-family:'Poppins', sans-serif;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    user-select: none;
+    overflow-y: auto;
+}
+
+.background{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+
+    background:url("../assets/backgrounds/cloud-bg.jpg");
+    
+    background-size: cover;
+
+
+    z-index: -1;
+}
+
+
+.profile-card{
+    width: clamp(320px, 90%, 1200px);
+    min-height: auto;
+    text-align: justify;
+
+    display: flex;
+    gap:30px;
+    padding:30px;
+    margin: auto;
+
+    background:rgba(233, 225, 225, 0.504);
+    border-radius:30px;
+}
+
+.profile-card h1{
+    font-size: clamp(1.2rem, 2vw, 2.5rem);
+}
+
+.ProfileBackground{
+    width: clamp(180px, 30vw, 300px);
+    height: clamp(180px , 30vw , 300px);
+    align-self: center;
+
+    background: url("/assets/profile/yonatan.jpeg");
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.profile-card h1{
+    color:#572dd3;
+    font-size: clamp(1rem , 2vw, 2.5rem);
+}
+
+/*QUE ESTO SEA VERTICAL*/
+.quick-menu{
+    font-size: clamp(0.5rem, 1vw, 1rem);
+    width: 65%;
+    padding: 0px , 30px , 0px , 30px;
+
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 15px;
+}
+
+.quick-menu a{
+    text-decoration:none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Ocultar el segundo span dentro del enlace */
+.iconProyectos span:nth-child(2), 
+.iconDocumentacion span:nth-child(2),
+.iconHabilidades span:nth-child(2), 
+.iconExperiencia span:nth-child(2),  
+.iconContactos span:nth-child(2){
+    display: none;
+}
+
+.quick-menu-span:hover span:nth-child(3) {
+    display: none;
+}
+
+
+.iconProyectos:hover .icon-text-hidden, 
+.iconDocumentacion:hover .icon-text-hidden,
+.iconHabilidades:hover .icon-text-hidden, 
+.iconExperiencia:hover .icon-text-hidden,  
+.iconContactos:hover .icon-text-hidden{
+    text-decoration:underline;
+    display: inline;
+}
+
+
+.iconProyectos:hover .icon-img, 
+.iconDocumentacion:hover .icon-img,
+.iconHabilidades:hover .icon-img, 
+.iconExperiencia:hover .icon-img,  
+.iconContactos:hover .icon-img{
+    height: 20px;
+}
+
+
+#Perfil{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#Contact{
+    font-size: clamp (0.5rem , 1vw , 1rem);
+    display: grid;
+    grid-template-columns:repeat(auto-fit,minmax(120px,1fr));
+    gap: 10px;
+}
+
+#Contact p{
+    display: flex;
+    padding: 0px 10px 0px 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+#Contact p img{
+    height: 18px;
+}
+
+#infoPerfil{
+    flex: 1;
+    overflow-y: auto;
+}
+
+.contact-form-wrapper{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 20px 45px rgba(19, 24, 88, 0.12);
+    border: 1px solid rgba(87, 45, 211, 0.16);
+}
+
+.contact-form-wrapper h2{
+    margin-bottom: 18px;
+    color: #572dd3;
+    font-size: 1.8rem;
+}
+
+.contact-form{
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);
+    gap: 15px;
+}
+
+.contact-form label{
+    width: 100%;
+    height: 5px;
+    padding: 10px;
+    display: block;
+    font-size: 10px;
+    font-weight: 600;
+    color: #2d1a63;
+    margin-bottom: 8px;
+}
+
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    border: 1px solid rgba(87, 45, 211, 0.18);
+    background: rgba(255, 255, 255, 0.96);
+    font-size: 0.95rem;
+    color: #161616;
+}
+
+.contact-form textarea{
+    height: 50px;
+    resize: vertical;
+}
+
+.contact-form button{
+    width: fit-content;
+    position: absolute;
+    align-self: flex-end;
+    justify-self: center;
+    background: #572dd3;
+    color: #fff;
+    border: none;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.contact-form button:hover{
+    transform: scale(1.02);
+    background: #3f1c9f;
+}
+
+.form-message{
+    color: #2d7a32;
+    font-weight: 600;
+    margin-top: 6px;
+}
+
+.form-message.error{
+    color: #b72b2b;
+}
+
+ul {
+    list-style-position: inside;
+}
+

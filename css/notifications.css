@@ -1,0 +1,117 @@
+.notification-bell{
+
+    position:fixed;
+
+    top:4rem;
+
+    right:clamp(15px, 3vw, 70px);
+
+    font-size:clamp(24px, 2vw, 40px);
+
+    cursor:pointer;
+}
+
+.badge{
+    position:absolute;
+    width:clamp(14px,1.5vw,22px);
+    height:clamp(14px,1.5vw,22px);
+
+    font-size:clamp(8px,1vw,12px);
+
+    top:-5px;
+
+    right:-5px;
+
+    background-color:rgba(0, 229, 255, 0.329);
+
+    color:rgb(255, 255, 255);
+
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    z-index:-1;
+}
+
+#notificationPanel{
+
+    position:fixed;
+
+    top:0;
+
+    right: -300px;
+
+    width:clamp(280px,30vw,300px);
+
+    height:100vh;
+
+    background: rgba(255, 255, 255, 0.677);
+
+    transition:.4s;
+
+    padding:0px;
+
+    display: grid;
+    grid-template-rows: repeat(7, 1fr);
+    gap: 1px;
+
+    align-items: center;
+    justify-content: center;
+    overflow-y: auto;
+}
+
+#notificationPanel.active{
+    right:0;
+}
+
+.nProyectos{
+    display: flex;
+    font-size: 15px;
+    background: rgba(236, 131, 237, 0.464);
+    height: 80px;
+    border-radius: 30px 0px;
+    justify-self: center;
+    align-items:center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+.nProyectos:hover{
+    font-size: 10px;
+}
+
+#closeNotification{
+    width: 100%;
+    display: flex;
+    cursor: pointer;
+
+}
+
+#closeNotification img{
+    max-width: 20px;
+    float: right;
+}
+
+#downloadMP3{
+    display: flex;
+    height: 25px;
+    align-self: self-end;
+    justify-self: flex-end;
+    cursor: grabbing;
+
+}
+
+.nDocumentos{
+    display: flex;
+    font-size: clamp(0.5rem, 2vw, 1rem);
+    background: rgba(150, 216, 240, 0.656);
+    width: 90%;
+    margin: auto;
+    height: 80px;
+    border-radius: 30px 0px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
