@@ -1,8 +1,13 @@
+import { t } from "../i18n/languageManager.js";
 import { removeFns } from "./removeFns.js";
 
 const infoPerfil = document.getElementById("infoPerfil");
 
 export function fnContactos(){
+    /*****************Guardar la seccion actual*************************/
+    localStorage.setItem("currentSection", "Contact")
+
+
     infoPerfil.textContent = "";
 
     /******************************DIV PRINCIPAL*************************/
@@ -15,9 +20,9 @@ export function fnContactos(){
     form.method = "POST";
 
     const fields = [
-        { label: "Nombre completo", name: "name", type: "text", placeholder: "Tu nombre", required: true },
-        { label: "Correo electronico", name: "email", type: "email", placeholder: "tu@correo.com", required: true },
-        { label: "Asunto", name: "subject", type: "text", placeholder: "Asunto del mensaje", required: true }
+        { label: t("full_name"), name: "name", type: "text", placeholder: t("your_name"), required: true },
+        { label: t("email"), name: "email", type: "email", placeholder: t("email_placeholder"), required: true },
+        { label: t("subject"), name: "subject", type: "text", placeholder: t("subject"), required: true }
     ];
 
     fields.forEach(field => {
@@ -38,7 +43,7 @@ export function fnContactos(){
 
     const textarea = document.createElement("textarea");
     textarea.name = "message";
-    textarea.placeholder = "Escribe tu mensaje aqui...";
+    textarea.placeholder = t("message_placeholder");
     textarea.required = true;
     textarea.rows = 6;
 
@@ -58,7 +63,7 @@ export function fnContactos(){
 
     const submitButton = document.createElement("button");
     submitButton.type = "submit";
-    submitButton.textContent = "Enviar mensaje";
+    submitButton.textContent = t("send_message");
 
     const status = document.createElement("div");
     status.className = "form-message";
@@ -69,7 +74,7 @@ export function fnContactos(){
     form.addEventListener("submit", async (event) => {
         event.preventDefault();
         submitButton.disabled = true;
-        submitButton.textContent = "Enviando...";
+        submitButton.textContent = t("sending");
         status.textContent = "";
 
         const formData = new FormData(form);
@@ -84,7 +89,7 @@ export function fnContactos(){
             });
 
             if (response.ok) {
-                status.textContent = "Mensaje enviado correctamente. Revisa tu correo pronto.";
+                status.textContent = t("message_sent");
                 status.classList.remove("error");
                 form.reset();
             } else {
@@ -93,12 +98,12 @@ export function fnContactos(){
                 status.classList.add("error");
             }
         } catch (error) {
-            status.textContent = "Error de red. Verifica tu conexion e intenta otra vez.";
+            status.textContent = t("network_error");
             status.classList.add("error");
         }
 
         submitButton.disabled = false;
-        submitButton.textContent = "Enviar mensaje";
+        submitButton.textContent = t("send_message");
     });
 
     wrapper.appendChild(form);

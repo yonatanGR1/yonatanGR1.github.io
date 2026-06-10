@@ -1,0 +1,32 @@
+{
+    "language": "EN",
+
+    "notifications": "Notifications",
+    "pinned": "Pinned",
+    "cv": "CV",
+    "project_in_progress": "Project in Progress",
+    "spanish": "Spanish",
+    "english": "English",
+
+    "profile_description": "I am looking for an interesting opportunity where I can apply my knowledge and experience to contribute to the success of the organization. My approach focuses on problem-solving , process improvement and user support through efficient and well-documented solutions. I consider myself a person committed to continuous learning. The acquisition of new skills and adaptation to emergin technologies. My goal is to continue growing both professionally and personally, contributing value to the team and collaborating on projects that optimize operations, strengthen knowledge management, and improve the user experience.",
+
+    "projects": "Projects 🔝",
+    "documentation": "Documentation 🔝",
+    "knowledge": "Skills 🔝",
+    "experience": "Experience 🔝",
+    "contact": "Contact 🔝",
+
+    "full_name": "Full Name",
+
+    "your_name": "Your Name",
+    "email": "Email",
+    "email_placeholder": "You@gmail.com",
+    "subject": "Subject",
+
+    "message_placeholder": "Write your message here...",
+    "send_message": "Send Message",
+
+    "sending": "Sending...",
+    "message_sent": "Message sent successfully. Check your email soon.",
+    "network_error": "Network error. Please try again."
+}

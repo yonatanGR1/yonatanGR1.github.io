@@ -189,7 +189,7 @@ body{
 .contact-form textarea{
     width: 100%;
     border: 1px solid rgba(87, 45, 211, 0.18);
-    background: rgba(255, 255, 255, 0.96);
+    background: rgba(255, 255, 255, 0.281);
     font-size: 0.95rem;
     color: #161616;
 }
@@ -204,7 +204,7 @@ body{
     position: absolute;
     align-self: flex-end;
     justify-self: center;
-    background: #572dd3;
+    background: #562dd331;
     color: #fff;
     border: none;
     font-weight: 700;

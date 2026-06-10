@@ -1,6 +1,9 @@
 import "./app.js";
 import "./notifications.js";
 
+import "./i18n/languageManager.js";
+import "./app.js";
+
 import "./menu.js"
 import "./language.js";
 

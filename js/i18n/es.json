@@ -1,0 +1,30 @@
+{
+    "language": "ES",
+
+    "notifications": "Notificaciones",
+    "pinned": "Anclado",
+    "cv": "CV",
+    "project_in_progress": "Proyecto en Desarrollo",
+    "spanish": "Español",
+    "english": "Inglés",
+
+    "profile_description": "Busco una oportunidad interesante donde pueda aplicar mis conocimientos y experiencia para contribuir al éxito de la organización. Mi enfoque se centra en la resolucion de problemas, la mejora de procesos y soporte al usuario mediante soluciones eficientes y bien documentadas. Me considero una persona comprometida con el aprendizaje continuo, la adquisicion de nuevas habilidades. La adaptacion a tecnologías emergentes. La adaptación a tecnologías emergentes. Mi objetivo es seguir creciendo tanto profesional como personalmente, aportando valor al equipo de trabajo y colaborando en proyectos que optimicen las operaciones, fortalecer la gestión del conocimiento y mejorar la experiencia del usuario.",
+
+    "projects": "Proyectos 🔝",
+    "documentation": "Documentacion 🔝",
+    "knowledge": "Conocimientos 🔝",
+    "experience": "Experiencia 🔝",
+    "contact": "Contacto 🔝",
+
+    "full_name": "Nombre completo",
+
+    "your_name": "Tu nombre",
+    "email": "Correo electronico",
+    "email_placeholder": "Tu@gmail.com",
+    "subject": "Asunto",
+    "message_placeholder": "Escribe tu mensaje aqui...",
+    "send_message": "Enviar mensaje",
+    "sending": "Enviando...",
+    "message_sent": "Mensaje enviado correctamente.",
+    "network_error": "Error de red."
+}
