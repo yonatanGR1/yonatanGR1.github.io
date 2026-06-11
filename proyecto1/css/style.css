@@ -99,14 +99,14 @@ div.login span{
 }
 
 .presentacion input {
-	height: 48px;
+	height: clamp(1rem , 5vw , 100px);
     padding: 10px 10px 0;
-    width: 420px;
+    width: clamp(1rem , 25vw ,  420px);
     margin-top: 8px;
     margin-bottom: 3px;
     border-radius: 3px 0px 0px 3px;
     border: solid 1px #197AC4;
-     padding-left: 11px;
+    padding-left: 11px;
     color: #1C1C1C;
 }
 
