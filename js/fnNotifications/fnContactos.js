@@ -5,7 +5,7 @@ const infoPerfil = document.getElementById("infoPerfil");
 
 export function fnContactos(){
     /*****************Guardar la seccion actual*************************/
-    localStorage.setItem("currentSection", "Contact")
+    localStorage.setItem("currentSection", "Contact");
 
 
     infoPerfil.textContent = "";

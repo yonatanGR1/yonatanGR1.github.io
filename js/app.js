@@ -6,4 +6,9 @@ window.addEventListener("DOMContentLoaded", ()=>{
         localStorage.getItem("language") || "en";
 
     loadLanguage(savedLanguage);
+
+    localStorage.setItem(
+        "currentSection",
+        "Profile"
+    );
 });

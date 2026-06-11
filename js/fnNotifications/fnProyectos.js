@@ -1,5 +1,7 @@
 import { removeFns } from "./removeFns.js";
 import { downloadMP3 } from "./MP3/download.js";
+import { t } from "../i18n/languageManager.js";
+
 export let status;
 
 const panel = document.getElementById("notificationPanel");
@@ -18,7 +20,11 @@ export function getStatus(){
 }
 
 export function fnProyectos(){
+    removeFns();
+
     fnStatus(true); 
+    localStorage.setItem("currentSection", "Projects");
+
 
     const farmacia = document.createElement("a");
     const spanFarmacia = document.createElement("span");
@@ -31,7 +37,7 @@ export function fnProyectos(){
     farmacia.rel = "noopener noreferrer"; // buena práctica de seguridad
 
     // Configurar contenido
-    spanFarmacia.textContent = "Farmacia";
+    spanFarmacia.textContent = t("name_Project_Pharmacy");
     farmacia.appendChild(spanFarmacia);
     
     time(() => {
@@ -49,7 +55,7 @@ export function fnProyectos(){
 
     MP3.target = "_blank";   // abre en nueva pestaña
     MP3.rel = "noopener noreferrer"; // buena práctica de seguridad
-    spanMP3.textContent = "ReproductorMP3";
+    spanMP3.textContent = t("name_Project_MP3player");
     spanMP3.href = "https://github.com/yonatanGR1/MP3Player";
     spanMP3.target = "_blank";   // abre en nueva pestaña
     spanMP3.rel = "noopener noreferrer"; // buena práctica de seguridad
@@ -72,7 +78,7 @@ export function fnProyectos(){
     proyecto1.rel = "noopener noreferrer"; // buena práctica de seguridad
 
     // Configurar contenido
-    spanProyecto1.textContent = "Proyecto1";
+    spanProyecto1.textContent = t("name_Project_1");
     proyecto1.appendChild(spanProyecto1);
     
     time(() => {
@@ -90,7 +96,7 @@ export function fnProyectos(){
     proyecto2.rel = "noopener noreferrer"; // buena práctica de seguridad
 
     // Configurar contenido
-    spanProyecto2.textContent = "Proyecto2";
+    spanProyecto2.textContent = t("name_Project_2");
     proyecto2.appendChild(spanProyecto2);
     
     time(() => {

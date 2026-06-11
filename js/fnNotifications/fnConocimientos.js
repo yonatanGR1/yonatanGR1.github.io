@@ -1,31 +1,31 @@
+import { t } from "../i18n/languageManager.js";
+
 const infoPerfil = document.getElementById("infoPerfil");
-let lsi = [
-  "Mantenimiento Preventivo y Correctivo.",
-  "Microsoft office (Word, Excel, PowerPoint, Access)",
-  "HTML, CSS y JavaScript.",
-  "PostgreSQL, Ubuntu, Windows Server.", 
-  "AWS EC2, Amazon EBS, Docker. ", 
-  "PHP, GitHub , Laragon, documentación Tecnica",
-  "Unreal Engine 5." 
+let conocimientos = [
+    "Knowledge_1",
+    "Knowledge_2",
+    "Knowledge_3",
+    "Knowledge_4",
+    "Knowledge_5",
+    "Knowledge_6"
 ];
-let li = 7;
 
 export function fnConocimientos(){
-    const conocimientos = document.createElement("div");
-    const ls = document.createElement("ul");
+    localStorage.setItem("currentSection", "Skill");
 
-    let i = 0;
-    while(i < li){
-        const liElement = document.createElement("li");
+    console.log("Se ejecuto mi funcion fnConocimientos");
+    const contenedor = document.createElement("div");
+    const lista = document.createElement("ul");
 
-        liElement.textContent = lsi[i];
+    conocimientos.forEach(key => {
+        const li = document.createElement("li");
 
-        console.log("Mostrando el contenido del li" + liElement);
-        ls.appendChild(liElement);
-        i++;
-    }
+        li.textContent = t(key);
+
+        lista.appendChild(li);
+    });
 
     infoPerfil.textContent = "";
-    conocimientos.appendChild(ls);
-    infoPerfil.appendChild(conocimientos);
+    contenedor.appendChild(lista);
+    infoPerfil.appendChild(contenedor);
 }

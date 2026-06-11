@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="48" height="48">
+  <!-- Teléfono vertical -->
+  <rect x="18" y="8" width="12" height="22" rx="2" ry="2" fill="none" stroke="#444" stroke-width="2"/>
+  <circle cx="24" cy="10" r="1" fill="#444"/>
+  
+  <!-- Flecha curva superior -->
+  <path d="M12 20c0-6 8-10 12-10s12 4 12 10" fill="none" stroke="#444" stroke-width="2" stroke-linecap="round"/>
+  <path d="M36 20l-3-3m3 3l-3 3" stroke="#444" stroke-width="2" stroke-linecap="round"/>
+  
+  <!-- Teléfono horizontal -->
+  <rect x="14" y="34" width="20" height="8" rx="2" ry="2" fill="none" stroke="#444" stroke-width="2"/>
+  <circle cx="32" cy="38" r="1" fill="#444"/>
+  
+  <!-- Flecha curva inferior -->
+  <path d="M36 28c0 6-8 10-12 10s-12-4-12-10" fill="none" stroke="#444" stroke-width="2" stroke-linecap="round"/>
+  <path d="M12 28l3-3m-3 3l3 3" stroke="#444" stroke-width="2" stroke-linecap="round"/>
+</svg>

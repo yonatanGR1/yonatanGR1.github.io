@@ -1,6 +1,7 @@
 import { removeFns } from "./removeFns.js";
 import { array } from "./fnProyectos.js";
 import { fnStatus } from "./fnProyectos.js";
+import { t } from "../i18n/languageManager.js";
 
 const panel = document.getElementById("notificationPanel");
 
@@ -10,6 +11,8 @@ function time(callback, delay = 2000) {
 
 export function fnDocumentacion(){
     fnStatus(true);
+    removeFns();
+    localStorage.setItem("currentSection", "Documentation");
     /**********************FARMACEUTICA*********************** */
     time(() => {
     const Farmaceutica = document.createElement("a");
@@ -23,7 +26,7 @@ export function fnDocumentacion(){
     Farmaceutica.rel = "noopener noreferrer"; // buena práctica de seguridad
 
     // Configurar contenido
-    spanFarmaceutica.textContent = "Farmaceutica.pdf";
+    spanFarmaceutica.textContent = t("pdf_Pharmacy");
     Farmaceutica.appendChild(spanFarmaceutica);
 
     panel.appendChild(Farmaceutica);
@@ -43,7 +46,7 @@ export function fnDocumentacion(){
     MP3.rel = "noopener noreferrer"; // buena práctica de seguridad
 
     // Configurar contenido
-    spanMP3.textContent = "ReproductorMP3.pdf";
+    spanMP3.textContent = t("pdf_MP3player");
     MP3.appendChild(spanMP3);
 
     panel.appendChild(MP3);
@@ -63,7 +66,7 @@ export function fnDocumentacion(){
     ServidorZabbix.rel = "noopener noreferrer"; // buena práctica de seguridad
 
     // Configurar contenido
-    spanZabbix.textContent = "ServidorAWS-Ubuntu-Zabbix.pdf";
+    spanZabbix.textContent = t("pdf_AwsServerUbuntuZabbix");
     ServidorZabbix.appendChild(spanZabbix);
 
     panel.appendChild(ServidorZabbix);
@@ -83,7 +86,7 @@ export function fnDocumentacion(){
     ArquitecturaC.rel = "noopener noreferrer"; // buena práctica de seguridad
 
     // Configurar contenido
-    spanArquitecturaC.textContent = "Servidor-Docker-Arquitectura.pdf";
+    spanArquitecturaC.textContent = t("pdf_DockerServerArchitecture");
     ArquitecturaC.appendChild(spanArquitecturaC);
 
     panel.appendChild(ArquitecturaC);
@@ -103,7 +106,7 @@ export function fnDocumentacion(){
     unrealEngine.rel = "noopener noreferrer"; // buena práctica de seguridad
 
     // Configurar contenido
-    spanUnrealEngine.textContent = "Unreal-Engine-Crear-VideoJuego";
+    spanUnrealEngine.textContent = t("pdf_UnrealEngine");
     unrealEngine.appendChild(spanUnrealEngine);
 
     panel.appendChild(unrealEngine);

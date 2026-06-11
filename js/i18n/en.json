@@ -18,6 +18,31 @@
 
     "full_name": "Full Name",
 
+    "Este es un Comentario Seccion fnProyectos": "Seccion de fnProyectos",
+    "name_Project_Pharmacy": "Pharmacy",
+    "name_Project_MP3player": "MP3 player",
+    "name_Project_1": "Project 1",
+    "name_Project_2": "Project 2",
+
+    "Este es un Comentario Seccion fnDocumentacion": "Seccion de fnDocumentacion",
+    "pdf_Pharmacy": "Pharmacy.PDF",
+    "pdf_MP3player": "MP3 player.PDF",
+    "pdf_AwsServerUbuntuZabbix": "Server Aws , Ubuntu , Zabbix.PDF",
+    "pdf_DockerServerArchitecture": "Server Docker Arquitectura.PDF",
+    "pdf_UnrealEngine": "Video game creation with Unreal Engine.PDF",
+
+    "Este es un Comentario Seccion fnConocimientos": "Seccion de fnConocimientos",
+    "Knowledge_1": "Preventive and Corrective Maintenance",
+    "Knowledge_2": "HTML, CSS y Javascript",
+    "Knowledge_3": "PostgreSQL, Ubuntu, Windows Server",
+    "Knowledge_4": "AWS EC2, Amazon EBS, Docker",
+    "Knowledge_5": "PHP, GitHub, Laragon, Technical documentation",
+    "Knowledge_6": "Unreal Engine 5",
+
+    "Este es un Comentario Seccion fnExperiencia": "Seccion de fnExperiencia",
+    "Experience_1": "Diagnosis and resolution of hardware and software problems in computer equipment. Installation and configuration  of operating systems , applications and peripherals. Preventive and corrective maintenance, data backup, and technical assistance to users to ensure the proper functioning of the equipment.",
+    "Experience_2": "Supervised practice in electrical and electronic repair and maintenance Rodolfo Hernández Chávez. Realización de 200 Hours of supervised practice in electrical and electronic maintenance",
+
     "your_name": "Your Name",
     "email": "Email",
     "email_placeholder": "You@gmail.com",

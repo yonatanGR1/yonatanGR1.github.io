@@ -46,6 +46,7 @@ section div.contenido{
 
 /*FONDO*/
 html , body, .fondo{
+	width: 100%;
 	height: 100%;
 }
 
@@ -288,3 +289,4 @@ div.login span{
 .pie .espacio{
 	width: 100px;
 }
+

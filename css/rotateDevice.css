@@ -1,0 +1,24 @@
+#rotateDevice{
+    position: fixed;
+    display: flex;
+    inset: 0;
+    font-size: clamp(0.5 rem , 1vw, 2rem);
+    display: none;
+
+    background: rgb(0 0 0 / 88%);
+
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.rotate-content{
+    text-align: center;
+    color: white;
+    padding: clamp(1rem, 1vw, 2rem);
+}
+
+
+.rotate-content img{
+    width: clamp(1rem , 25vw, 5rem);
+}

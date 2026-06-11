@@ -9,6 +9,8 @@ export function refreshCurrentSection(){
      
     console.log("Mostrando current sections" , currentSection);
     switch(currentSection){
+        case "Profile":
+            break;
         case "Projects":
             fnProyectos();
             break;

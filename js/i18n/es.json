@@ -18,6 +18,32 @@
 
     "full_name": "Nombre completo",
 
+    "Este es un Comentario Seccion fnProyectos": "Seccion de fnProyectos",
+    "name_Project_Pharmacy": "Farmacia",
+    "name_Project_MP3player": "Reproductor MP3",
+    "name_Project_1": "Proyecto 1",
+    "name_Project_2": "Proyecto 2", 
+
+    "Este es un Comentario Seccion fnDocumentacion": "Seccion de fnDocumentacion",
+    "pdf_Pharmacy": "Farmacia.PDF",
+    "pdf_MP3player": "Reproductor MP3.PDF",
+    "pdf_AwsServerUbuntuZabbix": "Servidor Aws , Ubuntu , Zabbix.PDF",
+    "pdf_DockerServerArchitecture": "Servidor Docker Arquitectura.PDF",
+    "pdf_UnrealEngine": "Creacion de Video Juego con Unreal Engine.PDF",
+
+    "Este es un Comentario Seccion fnConocimientos": "Seccion de fnConocimientos",
+    "Knowledge_1": "Mantenimiento Preventivo y Correctivo",
+    "Knowledge_2": "HTML, CSS y Javascript",
+    "Knowledge_3": "PostgreSQL, Ubuntu, Windows Server",
+    "Knowledge_4": "AWS EC2, Amazon EBS , Docker",
+    "Knowledge_5": "PHP, GitHub, Laragon , documentacion Tecnica",
+    "Knowledge_6": "Unreal Engine 5",
+
+    "Este es un Comentario Seccion fnExperiencia": "Seccion de fnExperiencia",
+    "Experience_1": "Diagnóstico y resolución de problemas de hardware y software en equipos de cómputo. Instalacion y configuración de sistemas operativos, aplicaciones y periféricos. Mantenimiento preventivo y correctivo, copia de seguirdad de datos y asistencia técnica a los usuarios para garantizar el correcto funcionamiento de los equipos.",
+    "Experience_2": "Practica Supervisada en Reparacion y Mantenimiento Electrico y Electronico Rodolfo Hernández Chávez. Realización de 200 horas de práctica supervisada en mantenimiento eléctrico y electrónico.",
+    
+    "Este es un Comentario Seccion fnContactos": "Seccion de fnContactos",
     "your_name": "Tu nombre",
     "email": "Correo electronico",
     "email_placeholder": "Tu@gmail.com",
@@ -28,3 +54,4 @@
     "message_sent": "Mensaje enviado correctamente.",
     "network_error": "Error de red."
 }
+

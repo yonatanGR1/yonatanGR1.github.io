@@ -7,6 +7,7 @@
 }
 
 body{
+    width: 100%;
     min-height: 100vh;
     font-family:'Poppins', sans-serif;
     overflow: hidden;
@@ -20,14 +21,13 @@ body{
 
 .background{
     position: fixed;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
+    inset: 0;
 
     background:url("../assets/backgrounds/cloud-bg.jpg");
     
     background-size: cover;
-
-
     z-index: -1;
 }
 
