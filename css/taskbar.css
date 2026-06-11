@@ -28,9 +28,6 @@
     margin-left: auto;
 }
 
-#menuW{
-}
-
 #panelMenu{
     position: fixed;
     display: flex;
@@ -134,9 +131,10 @@
 
 
 #notification{
+    height: 100%;
+    width: 225px;
     display: grid;
     grid-template-columns: repeat(4, minmax(50px , 1fr));
-    height: 100%;
     align-items: center;
 }
 
